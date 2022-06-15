@@ -4,5 +4,5 @@ services:
         ports:
             - '13443:3443'
             - '8834:8834'
-        image: 'leishianquan/awvs-nessus:latest'
+        image: 'leishianquan/awvs-nessus:v1'
         command: bash -c "/etc/init.d/nessusd start"
