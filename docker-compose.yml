@@ -5,4 +5,4 @@ services:
             - '13443:3443'
             - '8834:8834'
         image: 'leishianquan/awvs-nessus:v4'
-        command: bash -c "/etc/init.d/nessusd start && cp /home/license_info.json /home/acunetix/.acunetix/data/license/"
+        command: bash -c "/etc/init.d/nessusd start && cp /home/license_info.json /home/acunetix/.acunetix/data/license/ && chmod 444 license_info.json"
